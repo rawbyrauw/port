@@ -397,9 +397,16 @@
         }
 
         function downloadResume() {
-            showMessage("Preparing Download: Raul_Ocana_Analytics_CV_OnePage_Final.pdf");
-            // In a real environment, this would link to the actual static file.
-            // For now, we simulate the action.
+    showMessage("Preparing Download: Raul_Ocana_Analytics_CV_OnePage_Final.pdf");
+    
+    // Create a temporary link element to trigger the download
+    const link = document.createElement('a');
+    link.href = 'Raul_Ocana_Analytics_CV_OnePage_Final.pdf'; // This must match your filename exactly
+    link.download = 'Raul_Ocana_Analytics_CV_OnePage_Final.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
         }
 
         // --- WORKSHOP TOOLS ---
