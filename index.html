@@ -89,7 +89,7 @@
                         <button onclick="toggleAssistant()" class="bg-indigo-600 text-white px-8 py-3 rounded shadow-lg hover:bg-indigo-700 transition transform hover:-translate-y-1">
                             ✨ Ask Assistant
                         </button>
-                        <a href="Raul_Ocana_Analytics_CV_OnePage_Final.pdf" download="Raul_Ocana_Analytics_CV_OnePage_Final.pdf" class="border-2 border-tecBlue text-tecBlue font-bold px-8 py-3 rounded hover:bg-tecBlue hover:text-white transition flex items-center gap-2">
+                        <a href="Raul_Ocana_Analytics_CV_OnePage_Final.pdf" download="Raul_Ocana_Analytics_CV_OnePage_Final.pdf" onclick="downloadResume()" class="border-2 border-tecBlue text-tecBlue font-bold px-8 py-3 rounded hover:bg-tecBlue hover:text-white transition flex items-center gap-2">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                             Download CV
                         </a>
@@ -114,6 +114,7 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                
                 <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
                     <h3 class="text-xl font-bold mb-4 flex items-center">
                         <svg class="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -184,7 +185,7 @@
                         <h2 class="text-3xl font-bold text-tecBlue">Raúl Alejandro Ocaña Estrada</h2>
                         <p class="text-logisticsGray font-semibold">Analytics & Supply Chain Data Professional</p>
                     </div>
-                    <a href="Raul_Ocana_Analytics_CV_OnePage_Final.pdf" download="Raul_Ocana_Analytics_CV_OnePage_Final.pdf" class="bg-tecBlue text-white px-6 py-2 rounded-lg font-bold flex items-center gap-2 hover:bg-blue-800 transition">
+                    <a href="Raul_Ocana_Analytics_CV_OnePage_Final.pdf" download="Raul_Ocana_Analytics_CV_OnePage_Final.pdf" onclick="downloadResume()" class="bg-tecBlue text-white px-6 py-2 rounded-lg font-bold flex items-center gap-2 hover:bg-blue-800 transition">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                         Download Resume PDF
                     </a>
@@ -241,19 +242,8 @@
                                 <p class="text-xs text-gray-400">Aug 2023 - Aug 2024 | Michoacán, MX</p>
                                 <p class="text-xs text-gray-600 mt-1">Achieved 15% cost reduction through SAP spend analysis and KPI dashboards.</p>
                             </div>
-                            <div>
-                                <p class="font-bold text-sm">Operations Coordinator — E. de la Defensa del Voto</p>
-                                <p class="text-xs text-gray-400">Jan 2021 - Sep 2021 | Morelia, MX</p>
-                                <p class="text-xs text-gray-600 mt-1">Increased logistics efficiency by 25% using Lean methodologies.</p>
-                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="mt-8 pt-6 border-t border-gray-200 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-500">
-                    <div class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>rauw.ocana@gmail.com</div>
-                    <div class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>+49 1577 4010314</div>
-                    <div class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>Würzburg, Germany</div>
                 </div>
             </div>
         </section>
@@ -280,7 +270,7 @@
             </div>
             <div id="chat-messages" class="flex-1 h-[300px] overflow-y-auto p-4 space-y-4 text-sm bg-gray-50/50">
                 <div class="message-inbound p-3 rounded-xl max-w-[85%]">
-                    Hello! I'm Raúl's digital assistant. I have his latest resume data (including his recent experience at <strong>ECN Staffing</strong> and <strong>GE Vernova</strong>). How can I help you navigate his Language Strategies portfolio?
+                    Hello! I'm Raúl's digital assistant. How can I help you today?
                 </div>
             </div>
             <div class="p-4 bg-white border-t border-gray-100 flex items-center gap-2">
@@ -298,7 +288,7 @@
     </div>
 
     <script>
-        const apiKey = ""; // Provided by environment
+        const apiKey = ""; // API Key handled by environment
 
         async function fetchGemini(model, payload, endpoint = "generateContent") {
             const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:${endpoint}?key=${apiKey}`;
@@ -315,10 +305,9 @@
                 await new Promise(r => setTimeout(r, delay));
                 delay *= 2;
             }
-            throw new Error("API Connection Failed after retries.");
+            throw new Error("API Connection Failed.");
         }
 
-        // --- ASSISTANT LOGIC ---
         function toggleAssistant() {
             const win = document.getElementById('chat-window');
             win.classList.toggle('hidden');
@@ -348,28 +337,18 @@
             msgArea.scrollTop = msgArea.scrollHeight;
 
             try {
-                const systemPrompt = `You are a professional Portfolio Assistant for Raúl Alejandro Ocaña Estrada.
-                UPDATED CONTEXT FROM RECENT CV (JAN 2026):
-                - Analytics & Supply Chain Professional.
-                - Current Education: B.A. Logistics (THWS Germany, Expected Oct 2025) and B.A. International Business (Tec de Monterrey).
-                - Recent Experience: Data Collection Analyst at ECN Staffing (Feb-Sep 2025), Global Supply Chain Intern at GE Vernova (Aug 2023-2024).
-                - Skills: SQL, Python (Intro), Power BI, SAP ERP & Ariba, Lean Six Sigma.
-                - Languages: Spanish (Native), English (Advanced), German (A2).
-                - Portfolio: Language Strategies course evidence.
-                - Objective: Guide the professor. If they ask about his latest work, mention ECN Staffing or GE Vernova cost reductions (15%). 
-                Tone: Helpful, professional, and academic.`;
-
+                const systemPrompt = `You are a professional Portfolio Assistant for Raúl Alejandro Ocaña Estrada.`;
                 const data = await fetchGemini('gemini-2.5-flash-preview-09-2025', {
-                    contents: [{ parts: [{ text: `User/Professor asks: "${message}"` }] }],
+                    contents: [{ parts: [{ text: `User asks: "${message}"` }] }],
                     systemInstruction: { parts: [{ text: systemPrompt }] }
                 });
 
-                const response = data.candidates?.[0]?.content?.parts?.[0]?.text || "I'm here to help you navigate Raúl's portfolio.";
+                const response = data.candidates?.[0]?.content?.parts?.[0]?.text || "I'm here to help you.";
                 document.getElementById(loadingId).remove();
                 addMessageToUI(response, 'inbound');
             } catch (err) {
                 document.getElementById(loadingId).remove();
-                addMessageToUI("Apologies. I'm having trouble connecting right now.", 'inbound');
+                addMessageToUI("Apologies. I'm having trouble connecting.", 'inbound');
             }
         }
 
@@ -382,23 +361,19 @@
             msgArea.scrollTop = msgArea.scrollHeight;
         }
 
-        // --- UPDATED DOWNLOAD LOGIC ---
         function downloadResume() {
-            // This function is now just for showing the message, as the download 
-            // is handled directly by the <a> tag download attribute in HTML.
             showMessage("Download starting: Raul_Ocana_Analytics_CV_OnePage_Final.pdf");
         }
 
-        // --- WORKSHOP TOOLS ---
         async function optimizeStrategy() {
             const input = document.getElementById('optimize-input').value;
-            if (!input) return showMessage("Please enter some text to optimize.");
+            if (!input) return showMessage("Please enter text.");
             const loader = document.getElementById('optimize-loader');
             const resultDiv = document.getElementById('optimize-result');
             loader.classList.remove('hidden');
             resultDiv.classList.add('hidden');
             try {
-                const prompt = `Professional strategist specializing in "Lean Communication". Optimize this for clarity: "${input}"`;
+                const prompt = `Optimize for clarity: "${input}"`;
                 const data = await fetchGemini('gemini-2.5-flash-preview-09-2025', { contents: [{ parts: [{ text: prompt }] }] });
                 resultDiv.innerHTML = (data.candidates?.[0]?.content?.parts?.[0]?.text || "").replace(/\n/g, '<br>');
                 resultDiv.classList.remove('hidden');
@@ -415,34 +390,13 @@
             container.classList.add('hidden');
             try {
                 const data = await fetchGemini('gemini-2.5-flash-preview-tts', {
-                    contents: [{ parts: [{ text: `Say in a professional tone: ${text}` }] }],
-                    generationConfig: {
-                        responseModalities: ["AUDIO"],
-                        speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: "Aoede" } } }
-                    }
+                    contents: [{ parts: [{ text: text }] }],
+                    generationConfig: { responseModalities: ["AUDIO"] }
                 });
                 const pcmData = data.candidates[0].content.parts[0].inlineData.data;
-                const sampleRate = parseInt(data.candidates[0].content.parts[0].inlineData.mimeType.match(/rate=(\d+)/)?.[1] || 24000);
-                player.src = URL.createObjectURL(pcmToWav(pcmData, sampleRate));
+                player.src = URL.createObjectURL(new Blob([atob(pcmData)], {type: 'audio/wav'}));
                 container.classList.remove('hidden');
             } catch (err) { showMessage("Audio failed."); } finally { loader.classList.add('hidden'); }
-        }
-
-        function pcmToWav(base64Pcm, sampleRate) {
-            const pcmString = atob(base64Pcm);
-            const pcm = new Int16Array(pcmString.length / 2);
-            for (let i = 0; i < pcm.length; i++) pcm[i] = pcmString.charCodeAt(i * 2) | (pcmString.charCodeAt(i * 2 + 1) << 8);
-            const buffer = new ArrayBuffer(44 + pcm.length * 2);
-            const view = new DataView(buffer);
-            const writeString = (offset, string) => { for (let i = 0; i < string.length; i++) view.setUint8(offset + i, string.charCodeAt(i)); };
-            writeString(0, 'RIFF'); view.setUint32(4, 36 + pcm.length * 2, true);
-            writeString(8, 'WAVE'); writeString(12, 'fmt ');
-            view.setUint32(16, 16, true); view.setUint16(20, 1, true); view.setUint16(22, 1, true);
-            view.setUint32(24, sampleRate, true); view.setUint32(28, sampleRate * 2, true);
-            view.setUint16(32, 2, true); view.setUint16(34, 16, true);
-            writeString(36, 'data'); view.setUint32(40, pcm.length * 2, true);
-            for (let i = 0; i < pcm.length; i++) view.setInt16(44 + i * 2, pcm[i], true);
-            return new Blob([buffer], { type: 'audio/wav' });
         }
 
         function showMessage(text) {
