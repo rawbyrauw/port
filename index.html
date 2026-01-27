@@ -160,19 +160,74 @@
         </section>
 
         <!-- UNITS SECTION -->
-        <section id="section-units" class="hidden max-w-6xl mx-auto px-6 py-12">
-            <h2 class="text-3xl font-bold mb-4 text-tecBlue uppercase tracking-tighter italic">Course Evidence</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-bold mb-3">Unit 1: Fundamentals</h3>
-                    <p class="text-gray-600 mb-6">Initial exercises focusing on diagnostic evaluation.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-                    <h3 class="text-xl font-bold mb-3">Unit 2: Advanced Applications</h3>
-                    <p class="text-gray-600 mb-6">Strategic communication in a global context.</p>
-                </div>
-            </div>
-        </section>
+<section id="section-units" class="hidden max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-4 text-tecBlue uppercase tracking-tighter italic">
+        Course Evidence
+    </h2>
+
+    <!-- UNITS CARDS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+            <h3 class="text-xl font-bold mb-3">Unit 1: Fundamentals</h3>
+            <p class="text-gray-600 mb-6">
+                Initial exercises focusing on diagnostic evaluation.
+            </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+            <h3 class="text-xl font-bold mb-3">Unit 2: Advanced Applications</h3>
+            <p class="text-gray-600 mb-6">
+                Strategic communication in a global context.
+            </p>
+        </div>
+    </div>
+
+    <!-- COURSE MATERIALS -->
+    <div>
+        <h3 class="text-xl font-bold text-tecBlue mb-4">
+            Course Materials
+        </h3>
+
+        <!-- BUTTONS -->
+        <div class="flex gap-4 mb-6">
+            <button
+                onclick="toggleAssignments()"
+                class="bg-tecBlue text-white px-6 py-3 rounded font-semibold"
+            >
+                Assignments
+            </button>
+
+            <button
+                onclick="toggleClasswork()"
+                class="border-2 border-tecBlue text-tecBlue px-6 py-3 rounded font-semibold"
+            >
+                Work in Class
+            </button>
+        </div>
+
+        <!-- ASSIGNMENTS LINKS -->
+        <div id="assignments-list" class="hidden space-y-2">
+            <a href="https://docs.google.com/document/d/1Up5EVD-JE1rg7wVw3Co9xKQNZcqnv5_ldDsPtIEL-8g/edit?usp=drive_link, https://drive.google.com/file/d/1u52TOoGhCA5y2muXcRNaP_KnL4AMYwBu/view?usp=drive_link" target="_blank" class="block underline">Homework 1</a>
+            <a href="https://drive.google.com/drive/folders/1kQ5NiYyIMMPknI9F9dSx1JK7Fancveq2?usp=sharing" target="_blank" class="block underline">Homework 2</a>
+            <a href="https://drive.google.com/drive/folders/1IyHWULwP6sAW6BNdAis7XnvDDZfIu9QS?usp=shar
+ing" target="_blank" class="block underline">Homework 3</a>
+            <a href="PASTE_HW4_LINK" target="_blank" class="block underline">Homework 4</a>
+            <a href="https://drive.google.com/drive/folders/13OWTp5kiQ6DObPtsqnkEuVDiKByHbpME?usp=sharing" target="_blank" class="block underline">Homework 5</a>
+            <a href="PASTE_HW6_LINK" target="_blank" class="block underline">Homework 6</a>
+        </div>
+
+        <!-- WORK IN CLASS LINKS -->
+        <div id="classwork-list" class="hidden space-y-2">
+            <a href="PASTE_WC1_LINK" target="_blank" class="block underline">Work in Class 1</a>
+            <a href="PASTE_WC2_LINK" target="_blank" class="block underline">Work in Class 2</a>
+            <a href="PASTE_WC3_LINK" target="_blank" class="block underline">Work in Class 3</a>
+            <a href="PASTE_WC4_LINK" target="_blank" class="block underline">Work in Class 4</a>
+            <a href="PASTE_WC5_LINK" target="_blank" class="block underline">Work in Class 5</a>
+            <a href="PASTE_WC6_LINK" target="_blank" class="block underline">Work in Class 6</a>
+        </div>
+    </div>
+</section>
+
 
         <!-- REFLECTIONS SECTION -->
         <section id="section-reflections" class="hidden max-w-4xl mx-auto px-6 py-12">
@@ -401,7 +456,17 @@ function downloadResume() {
         "_blank"
     );
 }
+        
+/* === UNITS SECTION TOGGLES === */
+function toggleAssignments() {
+    document.getElementById('assignments-list').classList.toggle('hidden');
+    document.getElementById('classwork-list').classList.add('hidden');
+}
 
+function toggleClasswork() {
+    document.getElementById('classwork-list').classList.toggle('hidden');
+    document.getElementById('assignments-list').classList.add('hidden');
+}
 
         // --- WORKSHOP TOOLS ---
         async function optimizeStrategy() {
